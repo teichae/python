@@ -1,6 +1,5 @@
 from selenium import webdriver
 from bs4 import BeautifulSoup
-import linecache
 import sys
 
 def getFinaceHtml ( code ):
@@ -38,9 +37,7 @@ def getFinaceHtml ( code ):
             result["전일가"] = arrRowSplit[1]
         elif arrRowSplit[0] == "시가" :
             result["시가"] = arrRowSplit[1]
-    #   print("================")
-    #print("================")
-    #print("================")
+
     samSung = "48,800"
     macInfra = "11,450"
     hyundaiCar = "92,150"
